@@ -1,0 +1,21 @@
+{
+    "name": "aoxiang/car-model",
+    "type": "library",
+    "description": "Card Model Library",
+    "minimum-stability": "stable",
+    "require": {
+        "guzzlehttp/guzzle": "6.0",
+        "sunra/php-simple-html-dom-parser": "^1.5"
+    },
+    "authors": [
+        {
+            "name": "aoxiang",
+            "email": "mail@aoxiang.me"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Aoxiang\\CarModel\\": "./src"
+        }
+    }
+}
