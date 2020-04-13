@@ -20,13 +20,13 @@ class CarModel
 
     }
 
-    public function getBrandList()
+    static public function getBrandList()
     {
         $service = new Che();
         return $service->getBrandList();
     }
 
-    public function getModelList(int $brandId)
+    static public function getModelList(int $brandId)
     {
         $service = new Che();
         return $service->getModelList($brandId);
