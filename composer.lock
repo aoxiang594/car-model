@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6afc784a5cecda8206fbde365492eeae",
+    "content-hash": "f9a749ff5b8f054dee00431f41f6b26a",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -210,16 +210,16 @@
         },
         {
             "name": "overtrue/pinyin",
-            "version": "4.0.6",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/overtrue/pinyin.git",
-                "reference": "9836dae1783bcf5934508a2abe32eca9ea5ee15d"
+                "reference": "298a12a927ca93f9db0eadc661f6a888f7fb3d91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/overtrue/pinyin/zipball/9836dae1783bcf5934508a2abe32eca9ea5ee15d",
-                "reference": "9836dae1783bcf5934508a2abe32eca9ea5ee15d",
+                "url": "https://api.github.com/repos/overtrue/pinyin/zipball/298a12a927ca93f9db0eadc661f6a888f7fb3d91",
+                "reference": "298a12a927ca93f9db0eadc661f6a888f7fb3d91",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -228,34 +228,14 @@
                     }
                 ]
             },
-            "require": {
-                "php": ">=7.1"
-            },
             "require-dev": {
-                "brainmaestro/composer-git-hooks": "^2.7",
-                "friendsofphp/php-cs-fixer": "^2.16",
-                "phpunit/phpunit": "~8.0"
+                "phpunit/phpunit": "~4.8"
             },
             "type": "library",
-            "extra": {
-                "hooks": {
-                    "pre-commit": [
-                        "composer test",
-                        "composer fix-style"
-                    ],
-                    "pre-push": [
-                        "composer test",
-                        "composer check-style"
-                    ]
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Overtrue\\Pinyin\\": "src/"
-                },
-                "files": [
-                    "src/const.php"
-                ]
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -263,8 +243,7 @@
             ],
             "authors": [
                 {
-                    "name": "overtrue",
-                    "email": "anzhengchao@gmail.com",
+                    "name": "Carlos",
                     "homepage": "http://github.com/overtrue"
                 }
             ],
@@ -275,7 +254,7 @@
                 "Pinyin",
                 "cn2pinyin"
             ],
-            "time": "2020-04-13T08:53:30+00:00"
+            "time": "2016-04-25T13:27:45+00:00"
         },
         {
             "name": "psr/http-message",
