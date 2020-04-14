@@ -6,7 +6,7 @@
     "require": {
         "guzzlehttp/guzzle": "^6.0",
         "sunra/php-simple-html-dom-parser": "^1.5",
-        "overtrue/pinyin": "~4.0"
+        "overtrue/pinyin": "^4.0"
     },
     "authors": [
         {
