@@ -9,6 +9,7 @@
 namespace Aoxiang\CarModel\Library;
 
 use GuzzleHttp\Client;
+use Overtrue\Pinyin\Pinyin;
 use Sunra\PhpSimple\HtmlDomParser;
 
 class Spider
@@ -17,6 +18,12 @@ class Spider
 
     protected $guzzleOptions = [];
 
+    protected $pinyin;
+
+    public function __construct()
+    {
+        $this->pinyin = new Pinyin();
+    }
 
     protected function get($url, array $query = [])
     {
