@@ -2,7 +2,6 @@
     "name": "aoxiang/car-model",
     "type": "library",
     "description": "Card Model Library",
-    "minimum-stability": "stable",
     "license": "MIT",
     "require": {
         "guzzlehttp/guzzle": "^6.0",
