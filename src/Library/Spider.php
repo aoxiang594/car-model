@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: aoxiang
  * Date: 2020-04-13
- * Time: 13:39
+ * Time: 13:39.
  */
 
 namespace Aoxiang\CarModel\Library;
@@ -28,7 +28,6 @@ class Spider
     protected function get($url, array $query = [])
     {
         try {
-
             if (empty($query)) {
                 $this->response = $this->getHttpClient()->get($url)->getBody()->getContents();
             } else {
@@ -36,7 +35,6 @@ class Spider
                     'query' => $query,
                 ])->getBody()->getContents();
             }
-
 
             return $this;
         } catch (\Exception $e) {
@@ -88,7 +86,6 @@ class Spider
             throw new \Exception($e->getMessage());
         }
     }
-
 
     protected function getHttpClient()
     {

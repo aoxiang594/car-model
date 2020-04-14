@@ -3,33 +3,33 @@
  * Created by PhpStorm.
  * User: aoxiang
  * Date: 2020-04-13
- * Time: 15:24
+ * Time: 15:24.
  */
 
 namespace Aoxiang\CarModel\Library;
-
 
 class XCar extends Spider
 {
     public function getBrandList()
     {
         //https://product.m.360che.com/brandlist.html
-        $url       = 'https://a.xcar.com.cn/brand/';
-        $response  = $this->get($url)->getHtmlDomResponse();
+        $url = 'https://a.xcar.com.cn/brand/';
+        $response = $this->get($url)->getHtmlDomResponse();
         $brandList = [];
-        foreach ($response->find(".letters-index li a") as $elements) {
+        foreach ($response->find('.letters-index li a') as $elements) {
             $id = $elements->getAttribute('data-pbid');
             if (!empty($id)) {
-                $name  = $elements->find('span.info', 0)->innertext();
+                $name = $elements->find('span.info', 0)->innertext();
                 $brand = [
-                    'logo'      => '',//is_null($logo) ? "" : $logo->getAttribute('.src'),
-                    'name'      => $name,
+                    'logo' => '', //is_null($logo) ? "" : $logo->getAttribute('.src'),
+                    'name' => $name,
                     'extend_id' => $id,
                 ];
 //                var_dump($brand['name']);
                 $brandList[] = $brand;
             }
         }
+
         return $brandList;
     }
 
